@@ -14,15 +14,15 @@
     - prisoners_capacity (not null, derived from number_of_cells * 4)
 
   - **Cells:**
-   - id (pk, auto)
-   - building (not null, fk: Buildings.name)
+    - id (pk, auto)
+    - building (not null, fk: Buildings.name)
 
   - **Staff:**
-   - id (pk, auto)
-   - full_name (not null, letters and spaces only)
-   - role enum(guard, management, other), not null
-   - status enum(active, inactive, on_break), not null
-   - hire_date (not null)
+    - id (pk, auto)
+    - full_name (not null, letters and spaces only)
+    - role enum(guard, management, other), not null
+    - status enum(active, inactive, on_break), not null
+    - hire_date (not null)
 
   - **Prisoners:**
     - id (pk, auto)
@@ -39,9 +39,9 @@
     - date (not null)
 
 - **Relationships**
-  - **Buildings** -> **Cells** One-to-Many (1:n)
-  - **Cells** -> **Prisoners** One-to-Many (1:n)
-  - **Prisoners** -> **Visits** One-to-Many (1:n)
+    - **Buildings** -> **Cells** One-to-Many (1:n)
+    - **Cells** -> **Prisoners** One-to-Many (1:n)
+    - **Prisoners** -> **Visits** One-to-Many (1:n)
 
 ## Entity–Relationship Diagram:
 ![ERD](assets/ERD.png)
