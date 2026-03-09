@@ -39,9 +39,9 @@
     - date (not null)
 
 - **Relationships**
-    - **Buildings** -> **Cells** One-to-Many (1:n)
-    - **Cells** -> **Prisoners** One-to-Many (1:n)
-    - **Prisoners** -> **Visits** One-to-Many (1:n)
+    - **Buildings** has many **Cells**  (1:n)
+    - **Cells** has many **Prisoners**  (1:n)
+    - **Prisoners** has many **Visits**  (1:n)
 
 ## Entity–Relationship Diagram:
 ![ERD](assets/ERD.png)
