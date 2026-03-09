@@ -44,3 +44,4 @@
   - **Prisoners** -> **Visits** One-to-Many (1:n)
 
 ## Entity–Relationship Diagram:
+![ERD](assets/ERD.png)
