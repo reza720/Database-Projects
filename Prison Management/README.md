@@ -30,7 +30,6 @@
     - charge_image_url (not null)
     - entrance_date (not null)
     - release_date (not null)
-    - building (not null, fk: Buildings.name)
     - cell (not null, fk: Cells.id)
 
   - **Visits:**
@@ -40,6 +39,8 @@
     - date (not null)
 
 - **Relationships**
-
+  - **Buildings** -> **Cells** One-to-Many (1:n)
+  - **Cells** -> **Prisoners** One-to-Many (1:n)
+  - **Prisoners** -> **Visits** One-to-Many (1:n)
 
 ## Entity–Relationship Diagram:
